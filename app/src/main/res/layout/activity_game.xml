@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9C27B0"
+    tools:context=".Game">
+
+    <Button
+        android:id="@+id/Button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="rollDice"
+        android:text="Roll"
+        app:layout_constraintBottom_toTopOf="@+id/resetbutton"
+        app:layout_constraintStart_toStartOf="@+id/resetbutton"
+        app:layout_constraintTop_toBottomOf="@+id/tv6" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/d1" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="9dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="11dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv4" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/Button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv5" />
+
+    <Button
+        android:id="@+id/resetbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="resetzero"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
